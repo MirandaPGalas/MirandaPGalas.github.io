@@ -1,0 +1,118 @@
+
+
+body {
+  background-color: #75aadb;
+  height: 100%;
+  margin: 0;
+  display: flow-root;
+}
+.hero-image {
+  height:150%;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  margin-left: -10%;
+  margin-top: -10%;
+  float: left;
+}
+.hero-text {
+  font-family: 'Rye', cursive;
+  font-size: 40px;
+  width: 500px;
+  text-align: right;
+  position: absolute;
+  margin-top: 500px;
+  margin-left: 1000px;
+  transform: translate(-50%, -50%);
+  color: black;
+  float: right;
+}
+
+.facts {
+  display: flow-root;
+  margin-top: 40px;
+  box-sizing: border-box;
+  width: 100%;
+  height: auto;
+  margin-bottom: 80px;
+}
+img {
+  float: left;
+  margin: 10%;
+}
+/* h1 {
+  font-family: 'Rye', cursive;
+  font-size: 60px;
+  color: white;
+  text-align: center;
+  margin-top: 200px;
+  width: 900px;
+  position: relative;
+  margin-top: 250px;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+} */
+h2 {
+  font-family: 'Rye', cursive;
+  font-size: 150px;
+  color: white;
+  text-align: left;
+  position: absolute;
+  margin-left: 12%;
+  float: left;
+}
+.factblack {
+  color: black;
+}
+h3 {
+  font-family: 'Lato', sans-serif;
+  font-size: 40px;
+  color: white;
+  width: 500px;
+  text-align: left;
+  margin-top: 15%;
+  position: absolute;
+  left: 75%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  float: right;
+}
+
+/* h4 {
+    font-family: avenir;
+    font-style: bold;
+    font-size: 42px;
+    letter-spacing: 3px;
+    color: white;
+    text-align: center;
+    margin-top: 150px;
+} */
+
+/* .circle {
+  background: #f6b40e;
+  clip-path: circle(50%);
+  height: 2em;
+  width: 2em;
+  align: center;
+  position: relative;
+  top: 28%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+} */
+
+
+p {
+  font-family: georgia;
+  font-size: 20px;
+  color: white;
+  text-align: left;
+  line-height: 1.4;
+  width: 530px;
+  position: absolute;
+  margin-top: 40%;
+  left: 76%;
+  transform: translate(-50%, -50%);
+  float: right;
+}
