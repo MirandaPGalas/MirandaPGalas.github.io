@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="Miranda Galas">
+    <meta name="description" content="Assignment 4: Working with Javascript">
+    <title>Assignment 4: Working with Javascript</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Roboto+Condensed&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script>
+    $( function() {
+      $( "#datepicker" ).datepicker();
+    } );
+    </script>
+    <script>
+    $( function() {
+      $( "#draggable" ).draggable();
+      $( "#droppable" ).droppable({
+        drop: function( event, ui ) {
+          $( this )
+            .addClass( "ui-state-highlight" )
+            .find( "p" )
+              .html( "Dropped!" );
+        }
+      });
+    } );
+    </script>
+    <script>
+    $( function() {
+      $( "input" ).checkboxradio();
+    } );
+    </script>
+    <script>
+    $( function() {
+        $( "#slider" ).slider();
+    } );
+    </script>
+
+    <script>
+    $( function() {
+      $( "#accordion" ).accordion({
+        collapsible: true
+      });
+    } );
+    </script>
+
+  </head>
+  <body>
+    <h1>Assignment 4: Working with Javascript</h1>
+    <p>Here are five examples of Jquery UI components</p>
+    <br>
+
+    <h2>Example 1: Datepicker</h2>
+      <p>Date: <input type="text" id="datepicker"></p>
+    <br>
+
+    <h2>Example 2: Droppable</h2>
+    <div id="draggable" class="ui-widget-content">
+      <p>Drag me to my target</p>
+    </div>
+    <div id="droppable" class="ui-widget-header">
+      <p>Drop here</p>
+    </div>
+    <br><br><br><br><br><br><br><br><br><br><br>
+
+    <h2>Example 3: Radio button</h2>
+    <div class="widget">
+      <div id="radio">
+          <fieldset>
+            <legend>How to cook steak: </legend>
+            <input type="radio" name="radio-1" id="radio-1">
+            <label for="radio-1">Rare</label>
+            <input type="radio" name="radio-1" id="radio-2">
+            <label for="radio-2">Medium Rare</label>
+            <input type="radio" name="radio-1" id="radio-3">
+            <label for="radio-3">Medium</label>
+            <input type="radio" name="radio-1" id="radio-4">
+            <label for="radio-4">Medium Well</label>
+            <input type="radio" name="radio-1" id="radio-5">
+            <label for="radio-5">Well Done</label>
+          </fieldset>
+      </div>
+    </div>
+    <br><br>
+
+    <h2>Example 4: Slider</h2>
+    <p>How much did you love yourself today?</p>
+    <div id="slider"></div>
+    <br><br>
+
+    <h2>Example 5: Accordion</h2>
+    <h4>You go at red, but stop at green.<br>WHAT AM I?</h4>
+    <div id="accordion">
+      <h3>Clue #1</h3>
+        <div>
+          <p>
+          You eat me.
+          </p>
+        </div>
+      <h3>Clue #2</h3>
+        <div>
+          <p>
+          I'm a fruit.
+          </p>
+        </div>
+      <h3>Clue #3</h3>
+        <div>
+          <p>
+          I'm green on the outside and red on the inside.
+          </p>
+        </div>
+      <h3>Answer</h3>
+        <div>
+          <p>
+          A watermelon
+          </p>
+        </div>
+  </div>
+
+  </body>
+</html>

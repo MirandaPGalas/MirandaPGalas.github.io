@@ -1,0 +1,54 @@
+body {
+  background-color: lightblue;
+  font-family: 'Roboto Condensed',sans-serif;
+  margin-left: 10%;
+  margin-top: 5%;
+  margin-bottom: 10%;
+  display: flow-root;
+}
+p {
+  font-family: 'Montserrat',sans-serif;
+}
+h1 {
+  font-size: 38pt;
+}
+h4 {
+  font-size: 25pt;
+  border: 2pt;
+  background-color: lightcoral;
+  padding: 20px;
+  width: 460px;
+  text-align: center;
+}
+#draggable {
+  width: 100px;
+  height: 100px;
+  padding: 0.5em;
+  float: left;
+  margin: 10px 10px 10px 0;
+}
+
+#droppable {
+  width: 150px;
+  height: 150px;
+  padding: 0.5em;
+  float: left;
+  margin: 10px;
+}
+
+#radio {
+  float: none;
+  width: 500px;
+}
+
+#slider {
+  width: 500px;
+}
+
+#accordion {
+  width: 500px;
+}
+
+.accordion {
+  width: 500px;
+}
